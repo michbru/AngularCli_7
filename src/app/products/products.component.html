@@ -1,0 +1,75 @@
+<p>
+  products works!
+</p>
+<div class="container">
+  <div class="col-md-12">
+    <h1>Products</h1><div>{{isLoading}}</div> <img class="img-responsive" src="../../assets/images/loading.gif" *ngIf="isLoading">
+ 
+    <div class="col-md-6 col-md-12">
+      <br>
+      <table class="table table-bordered table-striped table-hover">
+        <tr>
+          <th> Id</th>
+          <th>Product Name</th>
+          <th>Product Code</th>
+          <th>Price</th>
+          <th></th>
+
+        </tr>
+        <tr *ngFor="let item of allItems">
+          <td>{{item.id}}</td>
+          <td>{{item.productName}}</td>
+          <td>{{item.productCode}}</td>
+          <td>{{item.price}}</td>
+          <td class="text-center">
+            <button class="btn btn-info" (click)="getItem(item)">
+          <i class="glyphicon glyphicon-pencil"></i>
+        </button>
+            <button class="btn btn-danger" (click)="deleteItem(item)">
+          <i class="glyphicon glyphicon-remove"></i>
+        </button>
+          </td>
+        </tr>
+      </table>
+      <button class="btn btn-success" (click)="showNewForm()">
+    <i class="glyphicon glyphicon-plus"></i>
+  </button>
+    </div>
+  <!-- <img class="img-responsive" src="../../assets/images/loading.gif" *ngIf="isLoading"> -->
+    <div class="col-md-6 col-md-12">
+
+      <form #myForm="ngForm" name="myForm" novalidate>
+        <div *ngIf="itemEdit">
+          <div class="form-group">
+            <label>Product Name</label>
+            <input type="text" class="form-control" name="productName" [(ngModel)]="itemEdit.productName" #productName="ngModel" required>
+            <div class="alert alert-danger" *ngIf="productName.dirty && productName.invalid">name is required</div>
+          </div>
+
+          <div class="form-group">
+            <label>Product Code</label>
+            <input type="text" class="form-control" name="productCode" [(ngModel)]="itemEdit.productCode" #productCode="ngModel" required>
+            <div class="alert alert-danger" *ngIf="productCode.dirty && productCode.invalid">productCode is required</div>
+          </div>
+          <div class="form-group">
+            <label>Description</label>
+            <input type="text" class="form-control" name="description" [(ngModel)]="itemEdit.description" #description="ngModel" required>
+            <div class="alert alert-danger" *ngIf="description.dirty && description.invalid">description is required</div>
+          </div>
+          <div class="form-group">
+            <label>Price</label>
+            <input type="number" class="form-control" name="price" [(ngModel)]="itemEdit.price" #price="ngModel" required>
+            <div class="alert alert-danger" *ngIf="price.dirty && price.invalid">price is required</div>
+          </div>
+          <p>
+            <input type="button" class="btn btn-primary" value="Save" (click)="save()">
+            <input type="button" class="btn btn-warning" value="Cancel" (click)="cancel()">
+
+          </p>
+
+        </div>
+      </form>
+    </div>
+
+  </div>
+</div>

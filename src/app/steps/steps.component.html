@@ -1,0 +1,50 @@
+
+<div id="exTab2" class="container">
+  <br><br>
+  
+    <ul class="nav nav-tabs">
+      <li class="active">
+        <a id="aaLink"  href="#aa" data-toggle="tab">Step1</a>
+      </li>
+      <li>
+        <a id="bbLink" href="#bb" data-toggle="tab">Step2</a>
+      </li>
+      <li>
+        <a id="ccLink"  href="#cc" data-toggle="tab">Step3</a>
+      </li>
+    </ul>
+  
+    <div class="tab-content" id="tabs">
+      <div class="tab-pane active" id="aa">
+        <div class="col-xs-12">
+          <br />
+             <h4>1st step of wizard/step form</h4>
+          <div>text text<br />dsfhsdfd</div><br />
+          <div class="form-group">
+            <button class="btn btn-primary " (click)="nextClick('bbLink')" name="submit" type="button">Next</button>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane" id="bb">
+        <div class="col-xs-12">
+          <br />
+          <h4>2nd 222 step of wizard/step form</h4>
+          <div>text text<br />dsfhsdfd</div><br />
+          <div class="form-group">
+            <button class="btn btn-primary " (click)="nextClick('ccLink')" name="submit" type="button">Next</button>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane" id="cc">
+        <div class="col-xs-12">
+          <br />
+          <h4>3333 step of wizard/step form</h4>
+          <div>text text<br />dsfhsdfd</div><br />
+          <div class="form-group">
+            <button class="btn btn-primary " (click)="nextClick('aaLink')" name="submit" type="button">Next</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

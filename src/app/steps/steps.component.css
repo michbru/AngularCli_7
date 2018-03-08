@@ -1,0 +1,319 @@
+
+
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+  }
+  
+  .navbar .navbar-collapse {
+    text-align: center;
+  }
+  
+  .navbar-top {
+    margin-bottom: 20px;
+  }
+  
+  .tab-pane {
+    height: 400px;
+    width: 100%;
+    animation-duration: .5s !important;
+    animation-name: slideIn !important;
+    animation-fill-mode: forwards !important;
+    transition: transform .5s ease !important;
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translate(200px);
+    }
+  
+    to {
+      transform: translate(0px);
+    }
+  }
+  
+  .sidebar-navbar {
+    background-color: #003767;
+  }
+  
+  .txm-logo {
+    height: inherit;
+    padding: 5px 0px 5px 0px;
+  }
+  
+  .header-hamburger-menu {
+    /*font-family: FontAwesome;*/
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    color: #003767;
+  }
+  /* FontAwesome character: &#xf0c9; */
+  
+  .header-title {
+    /*font-family: OpenSans-Bold;*/
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: #003767;
+    letter-spacing: 0.08px;
+  }
+  
+  .header-background {
+    background: #F9F9F9;
+  }
+  
+  .header-text-bold {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: #014774;
+  }
+  
+  .sidebar-open-icon {
+    position: absolute;
+    left: 15px;
+    color: #014774;
+    font-size: 18px;
+  }
+  
+  .sidebar-close-icon {
+    position: absolute;
+    right: 15px;
+    color: white;
+    font-size: 25px;
+    line-height: inherit;
+  }
+  
+    .sidebar-close-icon:hover {
+      color: white;
+    }
+  
+  .body-text-bold {
+    /*font-family: OpenSans-Bold;*/
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #014774;
+  }
+  
+  .body-text {
+    /*font-family: OpenSans-Regular;*/
+    font-family: 'Open Sans', sans-serif;
+    /*font-weight: bold;*/
+    font-size: 24px;
+    color: #014774;
+  }
+  
+  .large-button-active {
+    background: #003767;
+    border-radius: 4px;
+    /*font-family: OpenSans-Bold;*/
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: #FFFFFF;
+    letter-spacing: 0.08px;
+  }
+  
+  .large-button-inactive {
+    background: #003767;
+    border-radius: 4px;
+    /*font-family: OpenSans-Bold;*/
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: #FFFFFF;
+    letter-spacing: 0.08px;
+  }
+  
+  .back-button-icon {
+    font-family: FontAwesome;
+    font-size: 18px;
+    color: #222222;
+  }
+  /* FontAwesome character: &#xf053; */
+  
+  .back-button-text {
+    /*font-family: OpenSans-Light;*/
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    font-size: 18px;
+    color: #222222;
+  }
+  
+  
+  .radio-button-background-selected {
+    background: #FFFFFF;
+    border: 1px solid #636363;
+    border-radius: 4px;
+  }
+  /* 152px wide (fit two across width of the page), 44px high */
+  
+  .radio-button-circle-selected {
+    background: #E36F1E;
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+  }
+  
+  .radio-button-text-selected {
+    /*font-family: OpenSans-Regular;*/
+    font-family: 'Open Sans', sans-serif;
+    /*font-weight: bold;*/
+    font-size: 18px;
+    color: #333333;
+    letter-spacing: -0.37px;
+  }
+  
+  .radio-button-background-unselected {
+    background: #F2F2F2;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+  }
+  
+  .radio-button-circle-unselected {
+    background: #CCCCCC;
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+  }
+  
+  .radio-button-text-unselected {
+    /*font-family: OpenSans-Regular;*/
+    font-family: 'Open Sans', sans-serif;
+    /*font-weight: bold;*/
+    font-size: 18px;
+    color: #333333;
+    letter-spacing: -0.37px;
+  }
+  
+  .text-field-label {
+    /*font-family: OpenSans-Regular;*/
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #003767;
+    letter-spacing: 0;
+  }
+  
+  .text-field {
+    background: #FFFFFF;
+    border: 1px solid #D8DFE5;
+    border-radius: 2px;
+    font-family: 'Open Sans';
+    font-weight: lighter;
+    font-size: 18px;
+    color: #222222;
+  }
+  /* full-width, 44px high text-field */
+  
+  .dropdown-arrow-icon {
+    /*font-family: FontAwesome;*/
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    color: #333333;
+  }
+  /* FontAwesome character: &#xf0d7; */
+  
+  .dropdown-choices-open {
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 2px;
+    /*font-family: OpenSans-Light;*/
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    font-size: 18px;
+    color: #222222;
+  }
+  /* full-width, 44px high text-field */
+  
+  .dropdown-choices-selected {
+    background: #E36F1E;
+    /*font-family: OpenSans-Light;*/
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    font-size: 18px;
+    color: #FFFFFF;
+  }
+  /* full-width, 44px high text-field */
+  
+  .datepicker-calendar-icon {
+    font-family: FontAwesome;
+    font-size: 20px;
+    color: #333333;
+  }
+  /* FontAwesome character: &#xf073; */
+  
+  input  {
+    width: 100%;
+  }
+  
+  .mat-datepicker-wrapper {
+    display: inline-flex;
+    width: 100%;
+  }
+  
+  mat-datepicker-toggle {
+    margin-left: -40px;
+    margin-top: -5px;
+  }
+  
+  .date-picker-input {
+    visibility: hidden;
+    width: 0;
+    padding: 0;
+  }
+  
+  .mat-datepicker-display {
+    line-height: 1.2;
+  }
+  
+  .example-sidenav-container {
+    height: 100%;
+  }
+  
+    .example-sidenav-container mat-sidenav {
+      height: 100%;
+    }
+  
+  .sidenav-header {
+    color: white;
+    font-family: 'Open Sans';
+    font-size: 24px;
+    margin: 20px 0px 20px 20px;
+    margin-left: 20px;
+    flex: 0 1 auto;
+  }
+  
+  .sidenav-content {
+    color: white;
+    font-size: 18px;
+    flex: 1 1 auto;
+  }
+  
+  .sidenav-link {
+    font-family: 'Open Sans';
+    margin: 10px 0px 0px 20px;
+  }
+  
+  .sidenav-footer {
+    display: flex;
+    height: 100%;
+    color: white;
+    font-size: 12px;
+    font-family: 'Open Sans';
+    line-height: 16px;
+    margin: 0px 0px 20px 20px;
+    flex: 0 1 70px;
+  }
+  
+  .sidebar {
+    background-color: #636363;
+    display: flex !important;
+    width: 20%;
+    flex-flow: column;
+    height: 100%;
+    min-width: 300px !important;
+  }
+  
